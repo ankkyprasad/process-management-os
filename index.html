@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process Management</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="form-add-process">
+      <input type="number" placeholder="Arrival Time" />
+      <input type="number" placeholder="Burst Time" />
+      <button>Add Process</button>
+    </form>
+
+    <div class="process-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Process ID</th>
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+          </tr>
+        </thead>
+        <tbody id="process-table-body"></tbody>
+      </table>
+    </div>
+
+    <button id="btn-run">Run Process</button>
+    <button id="btn-reset">Reset</button>
+
+    <div class="process-table">
+      <table>
+        <thead id="result-table-header"></thead>
+        <tbody id="result-table-body"></tbody>
+      </table>
+    </div>
+
+    <div id="gant-chart"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
